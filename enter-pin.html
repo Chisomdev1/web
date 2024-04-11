@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Style2.css">
+    <style>
+        /* Styles for light mode */
+
+        .continue {
+            background-color: blue;
+            color: white;
+            width: 90%;
+            border: 0;
+            height: 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 5px 0px;
+        }
+
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Styles for dark mode */
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Style for icon */
+        .mode-switch {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /* Style for icon image */
+
+
+        /* Style for navigation bar */
+
+
+        /* Style for navigation bar links */
+        .navbar a {
+
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+        .dark-mode .toggle {
+            color: white;
+        }
+
+        .light-mode .toggle {
+            color: white;
+        }
+
+        .light-mode .navbar a {
+            color: white;
+        }
+
+        .dark-mode .navbar a {
+            color: white;
+        }
+
+        .dark-mode .sidebar {
+            background-color: black;
+        }
+
+        .dark-mode .sidebar a {
+            color: white;
+        }
+
+        .light-mode .sidebar a {
+            color: black;
+        }
+
+        .dark-mode .section {
+            background-color: #383838;
+            color: #fff;
+        }
+
+
+        .dark-mode .section {
+            background-color: #161129;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+        }
+
+        .section {
+            text-align: center;
+        }
+
+        .pin-container {
+            background-color: #fff;
+            padding: 110px 20;
+            border-radius: 8px;
+        }
+
+        .pin-input {
+            margin: 20px auto;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+
+        .pin-input input {
+            width: 70%;
+            height: 50px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .dark-mode .pin-container {
+            background-color: #161129;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <div class="section">
+        <div style="display: none;" class="navbar containers" id="navbar">
+            <div class="icon-container" class="mode-switch" onclick="toggleMode()">
+                <i id="mode-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+
+
+        <div class="pin-container">
+            <h2 class="text-center mt-3">Enter Your Pin</h2>
+            <div class="pin-input">
+                <input type="password" id="pin" maxlength="4" pattern="[0-9]*" inputmode="numeric" placeholder="● ● ● ●"
+                    autocomplete="off" required>
+            </div>
+            <button id="submit-btn" class="mb-3 continue">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hide preloader after 1 seconds
+            setTimeout(function () {
+                document.getElementById('preloader').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 800);
+        });
+
+
+        // Initially hide the navbar to prevent flickering
+        document.getElementById('navbar').style.visibility = 'visible';
+
+        // Function to toggle between light and dark modes
+        function toggleMode() {
+            // Check if current mode is light or dark
+            var currentMode = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+
+            // Toggle mode
+            if (currentMode === 'light') {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        }
+
+        // Function to enable light mode
+        function enableLightMode() {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            // Change icon to light mode
+            document.getElementById('mode-icon').classList.remove('fa-sun');
+            document.getElementById('mode-icon').classList.add('fa-moon');
+            // Store user preference in local storage
+            localStorage.setItem('mode', 'light');
+        }
+
+        // Function to enable dark mode
+        function enableDarkMode() {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            // Change icon to dark mode
+            document.getElementById('mode-icon').classList.remove('fa-moon');
+            document.getElementById('mode-icon').classList.add('fa-sun');
+            // Store user preference in local storage
+            localStorage.setItem('mode', 'dark');
+        }
+
+        // Check user preference from local storage and set mode accordingly
+        document.addEventListener('DOMContentLoaded', function () {
+            var mode = localStorage.getItem('mode');
+            if (mode === 'dark') {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+            // Make navbar visible after determining the mode
+            document.getElementById('navbar').style.visibility = 'visible';
+        });
+
+        //////////////////////////////////////////////////////////////
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var correctPin = "1234"; // Replace with your correct PIN
+            var pinInput = document.getElementById("pin");
+
+            document.getElementById("submit-btn").addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                var enteredPin = pinInput.value;
+
+                if (enteredPin === correctPin) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Transaction Successful!',
+                        timer: 2000, // Auto close after 2 seconds
+                        showConfirmButton: false
+                    }).then(function () {
+                        window.location.href =
+                        "successfully.html"; // Replace with the URL you want to redirect to
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'PIN is incorrect. Please try again.',
+                        showCancelButton: true,
+                        confirmButtonText: 'Retry',
+                        cancelButtonText: 'Change Pin'
+                    }).then(function (result) {
+                        if (result.value) {
+                            // User clicked Retry button
+                            // Reset the value of the input field
+                            pinInput.value = "";
+                        } else if (result.dismiss === Swal.DismissReason.cancel) {
+                            // User clicked Didn't receive code button
+                            // Redirect to another page
+                            window.location.href =
+                            "update_pin.html"; // Replace with the URL you want to redirect to
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="bootstrap5/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>

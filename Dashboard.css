@@ -1,0 +1,902 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Apply Poppins font to the entire document */
+
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.dark-mode body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .sidebar {
+    background-color: #000000;
+}
+
+.dark-mode .section-dashboard {
+    background-color: #383838;
+    color: #fff;
+}
+
+.dark-mode .sidebar a:hover {
+    background-color: black;
+}
+
+.dark-mode .sidebar a {
+    color: white;
+}
+
+.dark-mode hr {
+    color: black;
+}
+
+
+.container {
+    width: 85%;
+    /* Set width to 92% */
+    margin: 100px auto 0px;
+    /* Center the container horizontally */
+    border-radius: 5px;
+    padding: 20px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* Spacing between items */
+    align-items: center;
+    height: 10px;
+    /* Align items vertically in the center */
+}
+
+
+
+.container-2 {
+    width: 85%;
+    /* Set width to 92% */
+    margin: 0px 15px 0px;
+    /* Center the container horizontally */
+    border-radius: 5px;
+    padding: 20px 0px 17px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* Spacing between items */
+    align-items: center;
+    font-size: 23px;
+    height: 10px;
+    /* Align items vertically in the center */
+}
+
+/* Optional: Adjust spacing or styling of individual paragraphs */
+.container p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.center-text {
+    color: white;
+    /* Example color for the text */
+    flex-grow: 1;
+    /* Allow the text to take up remaining space */
+    text-align: center;
+    text-decoration: none;
+    /* Center the text horizontally */
+}
+
+
+.container .text-group {
+    display: flex;
+    /* Make text group a flex container */
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+
+.icon-container {
+    margin-left: 10px;
+    /* Adjust margin as needed */
+}
+
+.card {
+    display: none;
+}
+
+.containers1 {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+    justify-content: space-between;
+    /* Distribute items evenly across the nav-bar */
+    padding: 10px 20px;
+    /* Add padding to create space between items and edges of the nav-bar */
+}
+
+.dark-mode .section-dashboard1 {
+    background-color: #161129;
+}
+
+.dark-mode .containers1 {
+    background-color: #161129;
+}
+
+.dark-mode .section-dashboard {
+    background-color: #161129;
+}
+
+.dark-mode .icon-container {
+    background-color: #363636;
+    border-radius: 50%;
+    width: 10%;
+    height: 12%;
+
+}
+
+.dark-mode .icon-container {
+    width: 30px;
+    /* Adjust the size of the circle */
+    height: 30px;
+    /* Adjust the size of the circle */
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: #464646;
+    /* Change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-mode .icon-container {
+    width: 30px;
+    /* Adjust the size of the circle */
+    height: 30px;
+    /* Adjust the size of the circle */
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: #e9f5ff;
+    /* Change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.light-mode #mode-icon {
+    color: #2fa1ff !important;
+}
+
+.light-mode .sidebar a {
+    color: black !important;
+}
+
+.light-mode .sidebar a:hover {
+    color: black !important;
+}
+
+.light-mode .services {
+    color: white;
+}
+
+.dark-mode .services {
+    color: white !important;
+}
+
+.dark-mode .section-dashboard,
+.section-dashboard1,
+p {
+    color: white !important;
+}
+
+.fa-plus {
+    width: 35px;
+    /* Adjust the size of the circle */
+    height: 40px;
+    /* Adjust the size of the circle */
+    /* Make it a circle */
+    background-color: black;
+    border-radius: 5px;
+    /* Change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 0px 0px;
+}
+
+.icon {
+    font-size: 16px;
+    /* Adjust the size of the icon */
+    color: #fff;
+    /* Change the color of the icon */
+}
+
+.icon {
+    font-size: 16px;
+    /* Adjust the size of the icon */
+    color: #fff;
+    /* Change the color of the icon */
+}
+
+/* Optionally, apply Poppins font to specific elements */
+#welcomeText {
+    font-family: 'Poppins', sans-serif;
+}
+
+#copyButton {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Apply Poppins font to SweetAlert text */
+.swal2-title,
+.swal2-content {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px auto;
+    padding-left: 12%;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+}
+
+.icon:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.fund-section {
+    margin-bottom: 1%;
+}
+
+.Transaction-section {
+    margin-bottom: 2%;
+}
+
+
+.sidebar a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+
+.navbar-nav {
+    text-align: center;
+}
+
+.section-dashboard {
+    background-color: #635EE2;
+    width: 92%;
+    margin: 100px auto 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.section-dashboard1 {
+    background-color: #635EE2;
+    width: 92%;
+    margin: 80px auto 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.arrow-up {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+.section-dashboard {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.fund {
+    background-color: #232826;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.Dashboard-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0% 84% 0% 0%;
+}
+
+.Transaction {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.Transaction:hover {
+    color: white;
+}
+
+.Digits {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4%;
+    margin: 0% 90% 0% 0%;
+}
+
+.wallet {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-right: 80%;
+}
+
+.add_fund {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* transfer */
+.toggle {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control {
+    border: 1px solid black !important;
+    margin: 5px 0px;
+}
+
+.company-img {
+    width: 80px;
+    margin: 0px auto 10px;
+}
+
+.name {
+    font-size: 120%;
+    color: black;
+    font-weight: 600;
+
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid black !important;
+}
+
+#page {
+    display: none;
+    width: 100%;
+    height: 40%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.transfer {
+    margin-top: 100px;
+    width: 94% !important;
+    margin: 50px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.transfer-page {
+    margin-top: 100px;
+    width: 90%;
+    margin: 20% auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control {
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Note {
+    color: red;
+}
+
+.continue {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+
+.continue-copy {
+    background-color: blue;
+    color: white;
+    width: 40%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 31%;
+}
+
+.Confirm-btn {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.Confirm-back {
+    text-decoration: none;
+    background-color: black !important;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.Confirm-back:hover {
+    text-decoration: none;
+    background-color: black !important;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+
+.Confirm-btn:hover {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.comfirm {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.swal2-title,
+.swal2-content {
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+.dark-mode .info {
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+.info {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+#profile {
+    width: 33%;
+    color: black;
+    text-decoration: none;
+    background-color: blue;
+}
+
+.profile:hover {
+
+    color: black;
+    text-decoration: none;
+
+}
+.dark-mode .password {
+    border-right: 1px solid white;
+}
+.dark-mode .profile {
+    border-right: 1px solid white;
+}
+.profile {
+    font-size: 16px;
+    text-decoration: none;
+    border-right: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+.dark-mode #password {
+    width: 33%;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+}
+
+#password {
+    width: 33%;
+    color: black;
+    text-decoration: none;
+    background-color: blue;
+}
+
+.password:hover {
+
+    color: black;
+    text-decoration: none;
+}
+
+.password {
+    font-size: 16px;
+    text-decoration: none;
+    border-right: 1px solid green;
+    color: black;
+    text-decoration: none;
+}
+
+
+#pin {
+    width: 33%;
+    color: black;
+    text-decoration: none;
+    background-color: blue;
+}
+
+.Developer {
+    margin: 100px 0px 0px;
+}
+
+.pin:hover {
+
+    color: black;
+    text-decoration: none;
+}
+
+#welcomeText {
+    width: 100%;
+
+}
+
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* Hide content initially */
+#content {
+    display: none;
+}
+
+/* Animation for loader */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.Account-transfer{
+    margin-top: 70px;
+}
+.pin {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+.body-notification {
+    background-color: white;
+    width: 100%;
+}
+
+.notification {
+    background-color: #E9EFF2;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.arrow-up {
+    color: white;
+}
+
+.referral {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.solid {
+    font-size: 20px;
+}
+
+.toggle {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.toggle:hover {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#referral-optional {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.collection {
+    margin-top: 10px !important;
+    color: white;
+    background-color: white;
+}
+
+/* Default styles for all screen sizes */
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media screen and (min-width: 267px) and (max-width: 567px) {
+    .Dashboard-heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin: 0% 34% 0% 0%;
+        padding-bottom: 100%;
+    }
+
+    .referral {
+        width: 100%;
+    }
+
+    .toggle {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .Digits {
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 4%;
+        margin: 0% 63% 0% 0%;
+    }
+
+    .wallet {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin-right: 28%;
+    }
+
+    .fund-section {
+        margin-bottom: 2%;
+    }
+
+    .Transaction-section {
+        margin-bottom: 4%;
+    }
+
+    .solid {
+        font-size: 13px;
+    }
+
+    .toggle:hover {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .continue-copy {
+        background-color: blue;
+        color: white;
+        width: 70%;
+        border: 0;
+        height: 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 5px 20%;
+    }
+
+}
+
+.moon {
+    color: black;
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media screen and (max-width: 367px) {
+    .Dashboard-heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin: 0% 29% 0% 0%;
+        padding-bottom: 100%;
+    }
+
+    .referral {
+        width: 100%;
+    }
+
+    .continue-copy {
+        background-color: blue;
+        color: white;
+        width: 70%;
+        border: 0;
+        height: 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 5px 20%;
+    }
+
+    .fixed-bottom {
+        height: 60px;
+        margin: 0px 25%;
+    }
+
+    .Digits {
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 4%;
+        margin: 0% 63% 0% 0%;
+    }
+
+    .toggle:hover {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .wallet {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        margin-right: 29%;
+    }
+
+    .toggle {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .center-text:hover {
+        color: white !important;
+        font-family: 'Poppins', sans-serif !important;
+    }
+    .dark-mode .navbar{
+        background-color: #161129;
+    }
+
+    .fund-section {
+        margin-bottom: 5%;
+    }
+
+    .Transaction-section {
+        margin-bottom: 4%;
+    }
+
+    .solid {
+        font-size: 12px;
+    }
+
+
+}

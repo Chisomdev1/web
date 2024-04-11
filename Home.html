@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="zxx">
+
+<!-- Mirrored from templates.hibootstrap.com/snuff/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Feb 2024 21:53:35 GMT -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <style>
+        :root {
+            --background-color: #fff;
+            --text-color: #000;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Dark theme styles */
+        .theme-dark {
+            --background-color: #333;
+            --text-color: #fff;
+        }
+
+        /* Styling for the switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-left: 20px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="main-header-area">
+
+
+
+
+        <div class="navbar-area">
+            <div class="main-responsive-nav">
+                <div class="container">
+                    <div class="main-responsive-menu">
+                        <div class="widget-logo">
+                            <img src="image/logo.png" class="black-logo" alt="image">
+                            <img src="image/logo.png" class="white-logo" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="widget-logo">
+                            <img src="image/logo.png" class="black-logo" alt="image">
+                            <img src="image/logo.png" class="white-logo" alt="image">
+                        </div>
+
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+
+                                <li class="nav-item">
+                                    <a href="Home.html" class="nav-link active">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="team.html" class="nav-link">Team</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">
+                                        Blog
+
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link ">Contact</a>
+                                </li>
+
+                            </ul>
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <a href="Login.html" class="optional-btn">Log In</a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="Register.html" class="default-btn">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </nav>
+                </div>
+            </div>
+            <div class="others-option-for-responsive">
+                <div class="container">
+                    <div class="dot-menu">
+                        <div class="inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="option-inner">
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <a href="Login.html" class="optional-btn">Log In</a>
+                                </div>
+                                <div class="option-item">
+                                    <a href="Register.html" class="default-btn">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    
+
+    <div class="main-banner-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+                    data-aos-once="true">
+                    <div class="main-banner-content">
+
+                         <!-- <label class=" switch">
+                            <input id="themeSwitch" type="checkbox">
+                            <span class="slider round"></span>
+                        </label> -->
+
+                        <span>Simple. Quick. Secure.</span>
+                        <h1>Buy cheap Data/airtime</h1>
+                        <p>A Website to buying cheap data/airtime, up to 7x
+                            cheaper then others. </p>
+                        <div class="banner-btn">
+                            <a href="Register.html" class="default-btn">Register Now</a>
+                        </div>
+                        <ul class="trust-content">
+                            <li>
+                                <img src="assets/images/main-banner/line-graph.png" alt="image">
+                                <span>Over 400K Customers</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/main-banner/diamond.png" alt="image">
+                                <span>cheap And Fast</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="main-banner-image" data-speed="0.05" data-revert="true">
+                        <img src="assets/images/main-banner/banner-women.png" alt="image" data-aos="fade-down"
+                            data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+                    data-aos-once="true">
+                    <form class="money-transfer-form">
+                        <div class="amount-currency-total-content">
+                            <span>First Five purchase of data/airtime Is Fee-Free</span>
+                            <h3>Data Plans For All Network</h3>
+                        </div>
+                        <div class="money-transfer-content">
+
+
+
+                            <ul class="amount-currency-info">
+                                <li class="d-flex justify-content-between">
+                                    <div class="info-icon">
+                                        <i class="ri-subtract-line"></i>
+                                    </div>
+                                    <div class="info-left">
+                                        <h6 class="h6">Airtel 1GB = 350₦</h6>
+                                    </div>
+                                    <div class="info-right">
+
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <div class="info-icon">
+                                        <i class="ri-subtract-line"></i>
+                                    </div>
+                                    <div class="info-left">
+                                        <h6 class="h6">MTN 1GB = 350₦</h6>
+                                    </div>
+                                    <div class="info-right">
+
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <div class="info-icon">
+                                        <i class="ri-subtract-line"></i>
+                                    </div>
+                                    <div class="info-left">
+                                        <h6 class="h6">9Moblie 1GB = 350₦</h6>
+                                    </div>
+                                    <div class="info-right">
+
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <div class="info-icon">
+                                        <i class="ri-subtract-line"></i>
+                                    </div>
+                                    <div class="info-left">
+                                        <h6 class="h6">Glo 1GB = 350₦</h6>
+                                    </div>
+                                    <div class="info-right">
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="form-group">
+
+
+                                <ul class="amount-btn-group">
+                                    <li>
+                                        <a href="Register.html" class="optional-btn">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a href="Login.html" class="default-btn">Login Now</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner-shape" data-speed="0.08" data-revert="true">
+            <img src="assets/images/main-banner/shape-1.png" alt="image">
+        </div>
+        <div class="main-banner-shape-2" data-speed="0.08" data-revert="true">
+            <img src="assets/images/main-banner/shape-2.png" alt="image">
+        </div>
+    </div>
+
+
+    <div class="getting-started-area pt-100 pb-75">
+        <div class="container">
+            <div class="section-title">
+                <span>Getting Started</span>
+                <h2>Register And Start Paying bills In Minutes</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="50"
+                        data-aos-duration="500" data-aos-once="true">
+                        <div class="getting-image">
+                            <img src="assets/images/getting-started/getting-1.png" alt="image">
+                        </div>
+                        <h3>Special Offers</h3>
+                        <p>Give special offers, discounts, to regularly
+                            customers who refferals customers to the website, we offer data and airtime at competitive
+                            prices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="60"
+                        data-aos-duration="600" data-aos-once="true">
+                        <div class="getting-image">
+                            <img src="assets/images/getting-started/getting-2.png" alt="image">
+                        </div>
+                        <h3>Cheap and Reliable</h3>
+                        <p>Our Platform is a fully optimized platform for Reliability and dependability. You get 100%
+                            value for any transaction with us</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="70"
+                        data-aos-duration="700" data-aos-once="true">
+                        <div class="getting-image">
+                            <img src="assets/images/getting-started/getting-3.png" alt="image">
+                        </div>
+                        <h3>Automated system</h3>
+                        <p>Stress the convenience of instant delivery, ensuring that customers receive their data and
+                            airtime promptly after purchase.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-getting-started-card" data-aos="fade-up" data-aos-delay="80"
+                        data-aos-duration="800" data-aos-once="true">
+                        <div class="getting-image">
+                            <img src="assets/images/getting-started/getting-4.png" alt="image">
+                        </div>
+                        <h3>User-Friendly Experience</h3>
+                        <p>The user-friendly experience of our website, making it easy for customers to pay bills and
+                            purchase data and airtime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="why-choose-us-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="why-choose-us-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <span>Why Choose Us</span>
+                        <h3>Stay Connected with your friends and Family on social media</h3>
+                        <p>With multiple payment options and 24/7 availability, take advantage of our cheap data
+                            offering for all networks and do more in every area of your life.</p>
+                        <ul class="choose-us-list">
+                            <li>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Buy/Airtime cheap and easier.
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Cheap Data You Can Now DO MORE For Less On All Networks For Family And Friends.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="why-choose-us-image">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="choose-image" data-aos="fade-down" data-aos-delay="50"
+                                    data-aos-duration="500" data-aos-once="true">
+                                    <img src="assets/images/why-choose-us/choose-1.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="choose-image mb-25" data-aos="fade-left" data-aos-delay="50"
+                                    data-aos-duration="500" data-aos-once="true">
+                                    <img src="assets/images/why-choose-us/choose-2.jpg" alt="image">
+                                </div>
+                                <div class="choose-image" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                                    data-aos-once="true">
+                                    <img src="image/1.3a551e3a.jpg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-shape" data-speed="0.08" data-revert="true">
+                            <img src="assets/images/why-choose-us/shape-1.png" alt="image">
+                        </div>
+                        <div class="choose-shape-2" data-speed="0.08" data-revert="true">
+                            <img src="assets/images/why-choose-us/shape-2.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="security-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="security-image">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="security-wrap" data-aos="fade-down" data-aos-delay="50"
+                                    data-aos-duration="500" data-aos-once="true">
+                                    <img src="assets/images/security/security-1.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="security-wrap mb-25" data-aos="fade-left" data-aos-delay="50"
+                                    data-aos-duration="500" data-aos-once="true">
+                                    <img src="assets/images/security/security-2.jpg" alt="image">
+                                </div>
+                                <div class="security-wrap" data-aos="fade-up" data-aos-delay="50"
+                                    data-aos-duration="500" data-aos-once="true">
+                                    <img src="image/6.0e70abc7.jpg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="security-shape" data-speed="0.08" data-revert="true">
+                            <img src="assets/images/security/shape-1.png" alt="image">
+                        </div>
+                        <div class="security-shape-2" data-speed="0.08" data-revert="true">
+                            <img src="assets/images/security/shape-2.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="security-content" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <span>Security</span>
+                        <h3>Take The Stress Out Of Paying Bills and Buying Data, Airtime</h3>
+                        <p>Stress the convenience of instant delivery, ensuring that customers receive their data and
+                            airtime and other subcription promptly after purchase</p>
+                        <div class="security-inner-box">
+                            <div class="icon">
+                                <i class="flaticon-shield"></i>
+                            </div>
+                            <h4>buy and airtime Online Securely With Instant Approval</h4>
+                            <p>Moreover, the website's reliability is unmatched. Every transaction I've made has been
+                                executed swiftly and securely, providing peace of mind knowing that my transactions are
+                                in safe hands.
+                            </p>
+                        </div>
+                        <div class="security-inner-box">
+                            <div class="icon">
+                                <i class="flaticon-secure-shield"></i>
+                            </div>
+                            <h4>Secure Transactions</h4>
+                            <p>Assure our customers of the security of their transactions, emphasizing encryption and
+                                secure payment gateways to protect their personal and financial information
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="features-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="features-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <span>Our Features</span>
+                        <h3>The Reliable, Cheap & Fastest Way To Send Money Abroad</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-features-card" data-aos="fade-up" data-aos-delay="50"
+                                data-aos-duration="500" data-aos-once="true">
+                                <div class="icon-image">
+                                    <img src="assets/images/features/icon-1.png" alt="image">
+                                </div>
+                                <div class="content">
+                                    <h3>Faster And Cheaper</h3>
+                                    <ul class="list">
+                                        <li><i class="ri-checkbox-circle-line"></i>Emphasize that you offer data and
+                                            airtime at competitive prices, allowing customers to save money.
+                                        </li>
+                                        <li><i class="ri-checkbox-circle-line"></i> The variety of data plans and
+                                            airtime packages you offer, catering to different usage needs and
+                                            preferences, making it easy for customers to purchase data/airtime</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-features-card" data-aos="fade-down" data-aos-delay="50"
+                                data-aos-duration="500" data-aos-once="true">
+                                <div class="icon-image">
+                                    <img src="assets/images/features/icon-2.png" alt="image">
+                                </div>
+                                <div class="content">
+                                    <h3>Trusted & Secure</h3>
+                                    <ul class="list">
+                                        <li><i class="ri-checkbox-circle-line"></i>Commitment to excellent customers
+                                            service, including responsive support channels to assist customers with any
+                                            inquiries or issues they have.</li>
+
+                                        <li><i class="ri-checkbox-circle-line"></i>Reputation for Reliability and
+                                            trustworthiness, building confidence in your service among potential
+                                            customers.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="features-vector-image" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <img src="image/3f53ebab-7b13-4b47-9218-b48ca680d91f.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="coverage-area pt-100 pb-75">
+        <div class="container">
+            <div class="section-title">
+                <span>We got Covered you</span>
+                <h2>Supported by all Nigeria Bank</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-coverage-card" data-aos="fade-up" data-aos-delay="10" data-aos-duration="100"
+                        data-aos-once="true">
+                        <div class="content">
+                            <div class="coverage-image">
+                                <img src="/image/R.jpg" alt="image">
+                            </div>
+                            <h3>Opay</h3>
+                            <p>the website has become my go-to destination for all my
+                                subscription needs, thanks in large part to its seamless integration with Opay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-coverage-card" data-aos="fade-up" data-aos-delay="20" data-aos-duration="200"
+                        data-aos-once="true">
+                        <div class="content">
+                            <div class="coverage-image">
+                                <img src="image/palmpay.jpg" alt="image">
+                            </div>
+                            <h3>Palmpay</h3>
+                            <p>This platform that is seamlessly integrates with Palmpay has been a game-changer for me
+                                and it provides all subscription services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-coverage-card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="300"
+                        data-aos-once="true">
+                        <div class="content">
+                            <div class="coverage-image">
+                                <img src="image/51f9270c-44e1-4e17-96d6-00c82afb05ee.jpg" alt="image">
+                            </div>
+                            <h3>Access Bank</h3>
+                            <p>
+                                Exploring this website has been an eye-opening experience, especially with its seamless
+                                integration with the Access Bank.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-coverage-card" data-aos="fade-up" data-aos-delay="40" data-aos-duration="400"
+                        data-aos-once="true">
+                        <div class="content">
+                            <div class="coverage-image">
+                                <img src="image/UBA-logo.webp" alt="image">
+                            </div>
+                            <h3>UBA</h3>
+                            <p> This unique partnership with UBA has truly revolutionized the way I manage my
+                                telecommunications and
+                                subscription needs online</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="coverage-shape">
+            <img src="assets/images/coverage/shape-1.png" alt="image">
+        </div>
+        <div class="coverage-shape-2">
+            <img src="assets/images/coverage/shape-2.png" alt="image">
+        </div>
+    </div>
+
+
+    <div class="review-area ptb-100">
+        <div class="container">
+            <div class="section-title">
+                <span>Our Review</span>
+                <h3 class="counter-text">More than <span id="counter"> 23000 </span> Happy Customers Trust Our Services
+                </h3>
+            </div>
+            <div class="review-slides owl-carousel owl-theme">
+                <div class="single-review-box" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                    data-aos-once="true">
+                    <ul class="review-rating">
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                    </ul>
+                    <p>I stumbled upon this website while searching for a reliable platform to purchase data, airtime,
+                        and various subscriptions, including exam pins. I must say, I'm thoroughly impressed with the
+                        level of convenience and reliability it offers.</p>
+                    <div class="reviewquote-image">
+                        <img src="assets/images/quote-icon.png" alt="image">
+                    </div>
+                    <div class="review-info">
+                        <h3>Thomoson Piterson</h3>
+                        <span>Endemycon Leader</span>
+                    </div>
+                </div>
+                <div class="single-review-box" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
+                    data-aos-once="true">
+                    <ul class="review-rating">
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                    </ul>
+                    <p>Moreover, their reliability is unmatched. Every transaction I've made has been executed swiftly,
+                        with no hiccups or delays. I can rest assured that whenever I need to top up or purchase a
+                        subscription, this website will deliver promptly.</p>
+                    <div class="reviewquote-image">
+                        <img src="assets/images/quote-icon.png" alt="image">
+                    </div>
+                    <div class="review-info">
+                        <h3>Maxwel Warner</h3>
+                        <span>Endemycon Leader</span>
+                    </div>
+                </div>
+                <div class="single-review-box" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700"
+                    data-aos-once="true">
+                    <ul class="review-rating">
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                    </ul>
+                    <p>Customer service is another aspect where they excel. Any queries or concerns I've had were
+                        addressed promptly by their friendly and knowledgeable support team. It's refreshing to receive
+                        such personalized attention in today's digital age.</p>
+                    <div class="reviewquote-image">
+                        <img src="assets/images/quote-icon.png" alt="image">
+                    </div>
+                    <div class="review-info">
+                        <h3>John Terry</h3>
+                        <span>Endemycon Leader</span>
+                    </div>
+                </div>
+                <div class="single-review-box" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600"
+                    data-aos-once="true">
+                    <ul class="review-rating">
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                        <li><i class="ri-star-line"></i></li>
+                    </ul>
+                    <p>One of the standout features for me is the variety of options available. From different data
+                        plans and airtime packages tailored to various needs, they've got it all
+                        covered. Plus, the availability of other subscriptions such as exam pins.</p>
+                    <div class="reviewquote-image">
+                        <img src="assets/images/quote-icon.png" alt="image">
+                    </div>
+                    <div class="review-info">
+                        <h3>Victor Johnson</h3>
+                        <span>Endemycon Leader</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-optional-content">
+                <p>But don’t just take our word for it - check out what our customers have to say about their experience
+                    with us: <b>Excellent</b> <span>Based on 25,454 reviews</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overview-area ptb-100">
+        <div class="container">
+            <div class="overview-content" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                data-aos-once="true">
+                <span>Connect Us</span>
+                <h3>Paying bills and buying cheap and longlasting data and airtime for your Family and Friends, Make
+                    Everyone feel Special.</h3>
+                <ul class="overview-btn-group">
+                    <li>
+                        <a href="Register.html" class="default-btn">Register Now</a>
+                    </li>
+                    <li>
+                        <a href="Login.html" class="optional-btn">Login Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="overview-shape">
+            <img src="assets/images/overview/shape-1.png" alt="image">
+        </div>
+        <div class="overview-shape-2">
+            <img src="assets/images/overview/shape-2.png" alt="image">
+        </div>
+    </div>
+
+
+    <div class="faq-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="faq-image" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <img src="assets/images/faq.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="faq-item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="faq-content">
+                            <span>Frequently Ask Questions</span>
+                            <h3>Let’s Answer Some Of Your Questions Or Frequently Asked Questions</h3>
+                        </div>
+                        <div class="faq-accordion">
+                            <div class="accordion" id="FaqAccordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What payment methods do you accept?
+                                    </button>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#FaqAccordion">
+                                        <div class="accordion-body">
+                                            <p>List the payment methods you support, such as credit/debit cards, PayPal,
+                                                mobile money, or bank transfers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What should I do if I encounter an issue with my purchase?
+                                    </button>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#FaqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Provide guidance on how customers can contact your customer support team
+                                                for assistance with any issues or inquiries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How quickly will I receive my data or airtime after purchase?
+                                    </button>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#FaqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Specify the typical delivery timeframe, emphasizing any instant or
+                                                near-instant delivery options available.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-area pt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="widget-logo">
+                            <img src="image/logo.png" class="black-logo" alt="image">
+                            <img src="assets/images/logo-2.png" class="white-logo" alt="image">
+                        </div>
+                        <p>To get exclusive updates and benefits.</p>
+                        <form class="newsletter-form" data-bs-toggle="validator">
+                            <input type="email" class="input-newsletter" placeholder="Enter email" name="EMAIL" required
+                                autocomplete="off">
+                            <button type="submit" class="default-btn">Subscribe</button>
+                            <div id="validator-newsletter" class="form-result"></div>
+                        </form>
+                        <ul class="widget-social">
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100081659443786" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Chisom586092121" target="_blank">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/prinnce233?igsh=YzljYTk1ODg3Zg==" target="_blank">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/prince-chidike-819516293" target="_blank">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget ps-5" data-aos="fade-up" data-aos-delay="60"
+                        data-aos-duration="600" data-aos-once="true">
+                        <h3>Company And Team</h3>
+                        <ul class="quick-links">
+                            <li><a href="blog.html">News And Blog</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget ps-5" data-aos="fade-up" data-aos-delay="70"
+                        data-aos-duration="700" data-aos-once="true">
+                        <h3>Resources</h3>
+                        <ul class="quick-links">
+                            <li><a href="team.html">Company And Team</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
+                        data-aos-once="true">
+                        <h3>Contact Info</h3>
+                        <ul class="info-links">
+
+                            <li><span>Email:</span> <a href=""><span class="__cf_email__"
+                                        data-cfemail="e89b869d8e8ea88f85898184c68b8785">[email&#160;protected]</span></a>
+                            </li>
+                            <li><span>Phone:</span> <a href="2348020895339">+234-8020895339</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-area-content">
+                    <p>
+                        Copyright @<script data-cfasync="false"
+                            src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> Chidike Prince All Rights Reserved
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/snuff/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Feb 2024 21:58:28 GMT -->
+
+</html>

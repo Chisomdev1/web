@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+
+<style>
+    .dark-mode .sidebar a:hover {
+        background-color: #000000;
+    }
+
+    /* Styles for light mode */
+    body.light-mode {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    /* Styles for dark mode */
+    body.dark-mode {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    /* Style for icon */
+    .mode-switch {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    /* Style for icon image */
+
+
+    /* Style for navigation bar */
+
+
+    /* Style for navigation bar links */
+    .navbar a {
+
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+    .dark-mode .toggle {
+        color: white;
+    }
+
+    .light-mode .toggle {
+        color: white;
+    }
+
+    .light-mode .navbar a {
+        color: white;
+    }
+
+    .dark-mode .navbar a {
+        color: white;
+    }
+
+    .dark-mode .sidebar {
+        background-color: black;
+    }
+
+    .dark-mode .sidebar a {
+        color: white;
+    }
+
+    .light-mode .sidebar a {
+        color: black;
+    }
+
+
+    .containers {
+        display: flex;
+        align-items: center;
+        /* Align items vertically in the center */
+        justify-content: space-between;
+        /* Distribute items evenly across the nav-bar */
+        padding: 10px 20px;
+        /* Add padding to create space between items and edges of the nav-bar */
+    }
+
+    .center-text {
+        color: white;
+        /* Example color for the text */
+        flex-grow: 1;
+        /* Allow the text to take up remaining space */
+        text-align: center;
+        /* Center the text horizontally */
+    }
+
+    .icon-container {
+        margin-left: 10px;
+        /* Adjust margin as needed */
+    }
+
+    .dark-mode .info a {
+        color: white !important;
+    }
+
+    .swal2-title,
+    .swal2-content {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    .swal2-popup {
+        font-family: 'Poppins', sans-serif !important;
+        width: 92%;
+    }
+
+    .dark-mode .transfer {
+        background-color: #161129;
+    }
+
+    .light-mode .transfer {
+        background-color: #E9EFF2;
+    }
+
+    .dark-mode .navbar {
+        background-color: #161129;
+    }
+
+    .transfer-page {
+        margin-top: 9% !important;
+        margin-bottom: 9% !important;
+    }
+
+    .dark-mode hr {
+        color: white !important;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+    }
+    .btn:focus{
+        background-color: black !important;
+        border: 1px solid black;
+        box-shadow: none;
+        color: white;
+    }
+    .btn:hover{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="navbar containers fixed-top" id="navbar">
+        <div class="center-text">
+            <a href="#" class="active">RINTO</a>
+        </div>
+        <div class="icon-container" class="mode-switch" onclick="toggleMode()">
+            <i id="mode-icon" class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <div class="row max-auto navbar fixed-bottom">
+        <div class="col-lg-4 col-md-4 col-4">
+            <i class="solid fa-solid fa-bars"></i>
+            <a class="toggle" onclick="toggleSidebar()"> Menu</a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-4">
+            <i class="solid fa-solid fa-wifi"></i>
+            <a href="data.html" class="toggle"> Data</button></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-4">
+            <i class="solid fa-solid fa-phone"></i>
+            <a href="Airtime.html" class="toggle"> Airtime</a>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="Dashboard.html" class="nav-link">Home</a>
+        <a href="fund_account.html" class="nav-link">Fund Wallet</a>
+        <a href="Transfer.html" class="nav-link">Wallet Transfer</a>
+        <a href="transaction.html" class="nav-link">Transaction</a>
+        <a href="exam-sub.html" class="nav-link">Exam-Sub</a>
+        <a href="notification.html" class="nav-link">Notifications</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="referral.html" class="nav-link">Referrals</a>
+        <a href="Login.html" class="nav-link">Logout</a>
+    </div>
+    <div class="transfer transfer-page">
+
+        <h2 class="text-center ">Transaction pin</h2>
+
+        <div style="border-right: 0px;" class="row info">
+            <a class="profile text-center col-lg-4 col-md-4 col-4" href="profile.html">Profile</a>
+
+
+            <a class="password text-center col-lg-4 col-md-4 col-4" href="password.html">Password</a>
+
+            <a id="pin" class="pin text-center col-lg-4 col-md-4 col-4" href="update_pin.html">Pin</a>
+
+        </div>
+
+        <form id="myForm">
+            <h5 class="text-center mb-3">Update Transaction pin</h5>
+
+
+            <label for="oldPinInput">Old Pin</label>
+            <input type="password" id="oldPinInput" class="form-control" placeholder="Old Pin">
+
+            <label for="newPinInput">New Pin</label>
+            <input type="password" id="newPinInput" class="form-control" placeholder="New Pin">
+
+            <label for="retypePinInput">Retype Pin</label>
+            <input type="password" id="retypePinInput" class="form-control" placeholder="Retype Pin">
+
+            <button type="button" class="continue" onclick="updatePin()">Update Pin</button>
+
+            <button class="continue btn" onclick="goToDashboard()">Forget Pin</button>
+
+            <hr>
+
+            <h5 class="text-center mb-3">Disable Transaction pin</h5>
+
+
+            <div class="note">
+                <p class="Note">Note: The Disable Pin When You Are Sure About The Security Of Your Phone And Your
+                    Account Is Secured with A Strong Password.</p>
+            </div>
+
+            <label for="balanceInput">Old Pin</label>
+            <input type="number" id="balanceInput" class="form-control" placeholder="Old Pin">
+
+            <label for="">Change Status</label>
+            <select class="form-control" id="">
+                <option value="1">enable</option>
+                <option value="2">Disable</option>
+
+            </select>
+
+            <a class="Confirm-btn" href=""><button type="submit" class="continue">Disable pin</button></a>
+
+        </form>
+
+
+
+    </div>
+
+
+    <script>
+        // Function to navigate to the dashboard page
+        function goToDashboard() {
+            // Redirect to the dashboard page
+            window.location.href = "forget-password.html";
+        }
+
+        function updatePin() {
+            var oldPin = document.getElementById("oldPinInput").value;
+            var newPin = document.getElementById("newPinInput").value;
+            var retypePin = document.getElementById("retypePinInput").value;
+
+            // Check if any input field is empty
+            if (oldPin.trim() === '' || newPin.trim() === '' || retypePin.trim() === '') {
+                // Display SweetAlert if any field is empty
+                swal("Error", "Please fill in all the input fields.", "error");
+                return;
+            }
+
+            // Check if old pin is correct
+            if (oldPin !== "1234") {
+                swal("Error", "Old pin is incorrect. Please enter the correct old pin.", "error");
+                return;
+            }
+
+            // Check if new pin is not the same as old pin
+            if (oldPin === newPin) {
+                swal("Error", "New pin should be different from old pin. Please enter a different pin.", "error");
+                return;
+            }
+
+            // Check if new pin is not less than 4 digits
+            if (newPin.length !== 4) {
+                swal("Error", "New pin should be a four-digit number.", "error");
+                return;
+            }
+
+            // Check if new pin and retype pin match
+            if (newPin !== retypePin) {
+                swal("Error", "New pin and retype pin do not match. Please enter them again.", "error");
+                return;
+            }
+
+            // If all checks pass, proceed with pin update
+            // Here you can add your logic to update the pin
+            swal("Success", "Pin updated successfully!", "success");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hide preloader after 1 seconds
+            setTimeout(function () {
+                document.getElementById('preloader').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 800);
+        });
+
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var main = document.getElementById("main");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                main.style.marginLeft = "0";
+            } else {
+                sidebar.style.width = "250px";
+                main.style.marginLeft = "250px";
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var main = document.getElementById("main");
+            sidebar.style.width = "0";
+            main.style.marginLeft = "0";
+        }
+        // Close sidebar when clicking outside of it
+        document.addEventListener("click", function (event) {
+            var sidebar = document.getElementById("sidebar");
+            var sidebarButton = document.querySelector(".navbar .toggle");
+            if (event.target !== sidebar && event.target !== sidebarButton) {
+                closeSidebar();
+            }
+        });
+    </script>
+
+    <script>
+        // Initially hide the navbar to prevent flickering
+        document.getElementById('navbar').style.visibility = 'visible';
+
+        // Function to toggle between light and dark modes
+        function toggleMode() {
+            // Check if current mode is light or dark
+            var currentMode = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+
+            // Toggle mode
+            if (currentMode === 'light') {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        }
+
+        // Function to enable light mode
+        function enableLightMode() {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            // Change icon to light mode
+            document.getElementById('mode-icon').classList.remove('fa-sun');
+            document.getElementById('mode-icon').classList.add('fa-moon');
+            // Store user preference in local storage
+            localStorage.setItem('mode', 'light');
+        }
+
+        // Function to enable dark mode
+        function enableDarkMode() {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            // Change icon to dark mode
+            document.getElementById('mode-icon').classList.remove('fa-moon');
+            document.getElementById('mode-icon').classList.add('fa-sun');
+            // Store user preference in local storage
+            localStorage.setItem('mode', 'dark');
+        }
+
+        // Check user preference from local storage and set mode accordingly
+        document.addEventListener('DOMContentLoaded', function () {
+            var mode = localStorage.getItem('mode');
+            if (mode === 'dark') {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+            // Make navbar visible after determining the mode
+            document.getElementById('navbar').style.visibility = 'visible';
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="bootstrap5/jquery-3.7.1.min.js"></script>
+    <script src="transfer.js"></script>
+
+
+</body>
+
+</html>
